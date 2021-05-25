@@ -7,7 +7,7 @@
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
     var email = $('.validate-input input[name="email"]');
-    var subject = $('.validate-input input[name="subject"]');
+    //var subject = $('.validate-input input[name="subject"]');
     var message = $('.validate-input textarea[name="message"]');
 
 
@@ -19,10 +19,10 @@
             check=false;
         }
 
-        if($(subject).val().trim() == ''){
-            showValidate(subject);
-            check=false;
-        }
+        //if($(subject).val().trim() == ''){
+        //    showValidate(subject);
+        //    check=false;
+        //}
 
 
         if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
